@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 h1 {
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@ h1 {
 
 #navbar-menu ul li {
 	display: inline-block;
-	padding: 0 10px 0; 
+	padding: 0 10px 0;
 }
 
 #navbar-menu ul li.active {
@@ -115,21 +115,24 @@ h1 {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-image: url("cover.png");
+	background-image: url("../images/cover.png");
 	background-size: cover;
-	opacity: 0.5;
+	opacity: 0.4;
 	z-index: -1;
 }
 
 #index h1 {
 	font-size: 70px;
 	margin-top: 20%;
-	color: #000000;
+}
+
+#index h1 span {
+	color: #774268;
 }
 
 #index p {
 	text-align: center;
-	color: #000000;
+	color: #774268;
 }
 
 
@@ -166,7 +169,7 @@ h1 {
 	padding: 20px;
 	overflow: hidden;
 	border-top: 2px solid #FFFFFF;
-	border-bottom: 2px solid #FFFFFF; 
+	/*border-bottom: 2px solid #FFFFFF;*/
 }
 
 .project-label {
@@ -195,7 +198,7 @@ h1 {
 
 .project img {
 	width: 100%;
-	opacity: 0.95;
+	opacity: 0.99;
 	float: left;
 }
 

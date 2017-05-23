@@ -15,12 +15,13 @@ h1, h2, h3 {
 /*** Content ***/
 
 #content {
-	margin: 40px auto 100px;
+	margin: 40px auto 150px;
 	max-width: 800px;
 	line-height: 1.6;
 	font-size: 18px;
 	color: #444444;
 	padding: 0 10px;
+	overflow: auto;
 }
 
 h1 {
@@ -115,24 +116,26 @@ h1 {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-image: url("../images/cover.png");
+	background-image: url("../images/milkdrop.jpg");
 	background-size: cover;
-	opacity: 0.4;
+	opacity: .9;
 	z-index: -1;
 }
 
 #index h1 {
 	font-size: 70px;
 	margin-top: 20%;
+	color: #ffffff;
 }
 
-#index h1 span {
+#index span {
 	color: #774268;
 }
 
 #index p {
 	text-align: center;
-	color: #774268;
+	/*color: #774268;*/
+	color: #ffffff;
 }
 
 
@@ -154,6 +157,10 @@ h1 {
 	padding-left: 20px; float: left;
 }
 
+#about-desc p span {
+	color: #774268;
+}
+
 
 /*** Resume Page ***/
 
@@ -165,45 +172,45 @@ h1 {
 /*** Project Page ***/
 
 .project {
-	margin: 20px 0 20px;
-	padding: 20px;
+	width: 50%;
+	margin-top: 50px;
+	position: relative;
+	float: left;
 	overflow: hidden;
-	border-top: 2px solid #FFFFFF;
-	/*border-bottom: 2px solid #FFFFFF;*/
 }
 
 .project-label {
-	width: 40%;
-	float: left;
+	width: 100%;
+	height: 100%;
 	text-align: center;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+
+.project-label:hover {
+	opacity: 1;
+	background-color: rgba(247,247,247,0.9);
 }
 
 .project-label h2 {
-	margin-top: 50px;
+	margin-top: 30%;
+	color: #774268;
 }
 
 .project-label p {
-	padding: 0 30px 0;
-}
-
-.project-card {
-	width: 60%;
-	float: left;
-}
-
-.project-card p {
-	position: absolute;
-	top: 0;
+	padding: 0 15% 0;
 }
 
 .project img {
-	width: 100%;
-	opacity: 0.99;
+	width: 80%;
+	height: auto;
+	padding: 0px 10% 0px;
 	float: left;
 }
 
 .project img:hover {
-	opacity: 1.0;
+	opacity: 0.5;
 }
 
 .project a {

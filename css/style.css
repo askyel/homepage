@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #F7F7F7;
+	background-color: #FDFDFD;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -27,7 +27,7 @@ h1, h2, h3 {
 h1 {
 	text-align: center;
 	margin-top: 50px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 #content a {
@@ -35,16 +35,50 @@ h1 {
 	text-decoration: none;
 }
 
+p {
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+      font-size: 12px;
+    }
+}
+
+
+/*** Contact Strip ***/
+
+#contact-strip {
+	text-align: center;
+	padding: 0 50px 0;
+	margin-top: 7px;
+}
+
+#contact-strip ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contact-strip ul li {
+	display: inline-block;
+	padding: 0 5px 0;
+}
+
+#contact-strip ul li a img {
+	height: 25px;
+}
+
 
 /*** Navigation Bar ***/
 
 #navbar {
 	position: fixed;
-	bottom: 0;
+	top: 0;
 	padding: 30px 0 20px;
-	background-color: #FFFFFF;
+	background-color: #F7F7F7;
 	width: 100%;
-	border-top: 2px solid #F7F7F7;
+	border-bottom: 2px solid #FFFFFF;
 }
 
 #logo {

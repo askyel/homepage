@@ -1,10 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,400italic,700);
 
+html {
+	background: linear-gradient(to bottom right, #C33764, #1D2671);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #FDFDFD;
 	font-family: 'Lato', sans-serif;
+	color: #FDFDFD;
 }
 
 h1, h2, h3 {
@@ -12,7 +19,90 @@ h1, h2, h3 {
 }
 
 
+/*** Contact Strip ***/
+
+#contact-strip {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#contact-strip ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 15px 0 20px;
+}
+
+#contact-strip ul li {
+	display: inline-block;
+	padding: 0 10px 0;
+}
+
+#contact-strip ul li a img {
+	height: 20px;
+	filter: invert(100%);
+}
+
+#contact-strip ul li a img:hover {
+	filter: invert(75%);
+}
+
+
+/*** Navigation Bar ***/
+
+#navbar {
+	position: fixed;
+	top: 0;
+	padding: 20px 0 0;
+	width: 100%;
+	text-align: center;
+}
+
+#navbar a {
+	color: inherit;
+	text-decoration: none;
+	opacity: 1.0;
+}
+
+#navbar a:hover {
+	opacity: 0.75;
+}
+
+#navbar-menu {
+	margin-top: 7px;
+}
+
+#navbar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar-menu ul li {
+	display: inline-block;
+	padding: 0 10px 0;
+}
+
+#navbar-menu ul li.active {
+	color: #774268;
+}
+
+
 /*** Content ***/
+
+#content-container {
+	display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 80px 0 80px;
+  background-color: #FDFDFD;
+}
 
 #content {
 	margin: 0 auto 0;
@@ -23,12 +113,6 @@ h1, h2, h3 {
 	padding: 0 10px;
 	overflow: auto;
 	text-align: center;
-}
-
-h1 {
-	text-align: center;
-	margin-top: 50px;
-	text-transform: lowercase;
 }
 
 img.profile {
@@ -54,130 +138,18 @@ p {
 }
 
 
-/*** Contact Strip ***/
+/*** Home Page ***/
 
-#contact-strip {
-	text-align: center;
-	padding: 0 50px 0;
-	margin-top: 7px;
-}
-
-#contact-strip ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#contact-strip ul li {
-	display: inline-block;
-	padding: 0 5px 0;
-}
-
-#contact-strip ul li a img {
-	height: 25px;
-}
-
-
-/*** Navigation Bar ***/
-
-#navbar {
-	position: fixed;
-	top: 0;
-	padding: 30px 0 20px;
-	background-color: #F7F7F7;
-	width: 100%;
-	border-bottom: 2px solid #FFFFFF;
-}
-
-#logo {
-	float: left;
-	padding: 0 50px 0;
-	margin-bottom: 7px;
-	font-size: 25px;
-	text-transform: uppercase;
-}
-
-#navbar a {
-	color: inherit;
-	text-decoration: none;
-	opacity: 0.5;
-}
-
-#navbar a:hover {
-	opacity: 0.75;
-}
-
-#navbar-menu {
-	float: left;
-	text-transform: uppercase;
-	margin-top: 7px;
-}
-
-#navbar-menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#navbar-menu ul li {
-	display: inline-block;
-	padding: 0 10px 0;
-}
-
-#navbar-menu ul li.active {
-	color: #774268;
-}
-
-#navbar-contact {
-	float: right;
-	padding: 0 50px 0;
-	margin-top: 7px;
-}
-
-#navbar-contact ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#navbar-contact ul li {
-	display: inline-block;
-	padding: 0 5px 0;
-}
-
-#navbar-contact ul li a img {
-	height: 20px;
-}
-
-
-/*** Title Page ***/
-
-#index-pic {
+h1#home {
+	/*margin-top: 30%;*/
+	/*border: 1px solid white;*/
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-image: url("../images/milkdrop.jpg");
-	background-size: cover;
-	opacity: .9;
-	z-index: -1;
-}
-
-#index h1 {
-	font-size: 70px;
-	margin-top: 20%;
-	color: #ffffff;
-}
-
-#index span {
-	color: #774268;
-}
-
-#index p {
+	top: 50%;
+	height: 100px;
+	margin-top: -50px;
+	width: 100%;
 	text-align: center;
-	/*color: #774268;*/
-	color: #ffffff;
+	text-transform: lowercase;
 }
 
 

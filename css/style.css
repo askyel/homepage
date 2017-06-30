@@ -155,24 +155,38 @@ h1#home {
 	text-transform: lowercase;
 	font-size: 50px;
 	z-index: 10;
+	vertical-align: middle;
 }
 
-#gif {
+.gif {
 	position: absolute;
 	top: 50%;
-	height: 200px;
-	margin-top: -0px;
+	height: 350px;
+	margin-top: -325px;
+	/*height: 200px;
+	margin-top: -200px;*/
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
 }
 
-#gif img {
+.gif-flip {
+	transform: scaleX(-1);
+}
+
+.gif-lower {
+	margin-top: -50px;
+}
+
+.gif img {
 	z-index: -2;
 	height: 100%;
 	margin: 0 auto 0;
 	padding: 0;
-	opacity: 0.5;
+	opacity: 0.3;
+}
+
+.gif-lower img {
 	transform: rotate(180deg);
 }
 
@@ -259,9 +273,13 @@ h1#home {
       font-size: 32px;
     }
 
-		#gif {
-			height: 300px;
-			margin-top: -150px;
+		.gif {
+			height: 200px;
+			margin-top: -200px;
+		}
+
+		.gif-lower {
+			margin-top: -50px;
 		}
 
 		#about-pic img {

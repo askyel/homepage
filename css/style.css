@@ -102,8 +102,14 @@ h1, h2, h3 {
   right: 0;
   margin: 80px 0 80px;
 	overflow: scroll;
+	overflow-x: hidden;
   background-color: #FDFDFD;
 	opacity: 0.9;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
 }
 
 #content {
@@ -158,13 +164,17 @@ h1#home {
 	vertical-align: middle;
 }
 
+h1#home:hover {
+	opacity: 0;
+}
+
 .gif {
 	position: absolute;
 	top: 50%;
 	height: 350px;
-	margin-top: -325px;
-	/*height: 200px;
-	margin-top: -200px;*/
+	margin-top: -257.5px;
+	/*height: 200px;*/
+	/*margin-top: -250px;*/
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
@@ -175,7 +185,8 @@ h1#home {
 }
 
 .gif-lower {
-	margin-top: -50px;
+	margin-top: -117.5px;
+	/*margin-top: 25px;*/
 }
 
 .gif img {
@@ -183,7 +194,7 @@ h1#home {
 	height: 100%;
 	margin: 0 auto 0;
 	padding: 0;
-	opacity: 0.3;
+	opacity: 0.15;
 }
 
 .gif-lower img {
@@ -198,7 +209,7 @@ h1#home {
 }
 
 #about-pic img {
-	width: 300px;
+	width: 200px;
 	margin: 0 auto 0;
 	/*padding: 20px 20px 0;*/
 	border: 5px solid #EEEEEE;
@@ -241,7 +252,7 @@ h1#home {
 }
 
 .project img {
-	width: 150px;
+	width: 100px;
 	height: auto;
 	float: left;
 }

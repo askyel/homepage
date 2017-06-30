@@ -154,6 +154,26 @@ h1#home {
 	text-align: center;
 	text-transform: lowercase;
 	font-size: 50px;
+	z-index: 10;
+}
+
+#gif {
+	position: absolute;
+	top: 50%;
+	height: 200px;
+	margin-top: -0px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#gif img {
+	z-index: -2;
+	height: 100%;
+	margin: 0 auto 0;
+	padding: 0;
+	opacity: 0.5;
+	transform: rotate(180deg);
 }
 
 
@@ -238,6 +258,11 @@ h1#home {
 		h1#home {
       font-size: 32px;
     }
+
+		#gif {
+			height: 300px;
+			margin-top: -150px;
+		}
 
 		#about-pic img {
 			width: 150px;

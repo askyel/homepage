@@ -105,14 +105,9 @@ h1, h2, h3 {
 	max-width: 650px;
 	line-height: 1.6;
 	font-size: 18px;
-	color: #444444;
+	color: #222222;
 	padding: 0 10px 20px;
 	overflow: auto;
-}
-
-h2 {
-	margin-top: 50px;
-	text-align: center;
 }
 
 a {
@@ -124,10 +119,6 @@ a:hover {
 	opacity: 0.8;
 }
 
-p {
-	text-align: center;
-}
-
 #content ul {
 	max-width: 500px;
 	margin: 0 auto 0;
@@ -136,6 +127,11 @@ p {
 
 .style-italic {
 	font-style: italic;
+}
+
+.centered {
+	text-align: center;
+	margin: 0 auto 0;
 }
 
 
@@ -201,15 +197,9 @@ h1#home:hover {
 
 #about-pic img {
 	width: 200px;
-	margin: 10px auto 10px;
-	/*padding: 20px 20px 0;*/
+	margin: 50px auto 10px;
 	border: 5px solid #702F6B;
 	border-radius: 50%;
-}
-
-#about-desc p {
-	/*max-width: 500px;*/
-	text-align: left;
 }
 
 #about-desc p span {
@@ -270,10 +260,6 @@ h1#home:hover {
       font-size: 15px;
     }
 
-		h2 {
-			margin-top: 25px;
-		}
-
 		h1#home {
       font-size: 32px;
     }
@@ -289,6 +275,7 @@ h1#home:hover {
 
 		#about-pic img {
 			width: 150px;
+			margin-top: 25px;
 		}
 
 		#content ul {

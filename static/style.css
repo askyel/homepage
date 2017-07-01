@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,400italic,700);
+
+html {
+	background: linear-gradient(to bottom right, #C33764, #1D2671);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	color: #FDFDFD;
+}
+
+h1, h2, h3 {
+	line-height: 1.2;
+}
+
+
+/*** Contact Strip ***/
+
+#contact-strip {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#contact-strip ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 15px 0 20px;
+}
+
+#contact-strip ul li {
+	display: inline-block;
+	padding: 0 10px 0;
+}
+
+#contact-strip ul li a img {
+	height: 20px;
+	filter: invert(100%);
+}
+
+
+/*** Navigation Bar ***/
+
+#navbar {
+	position: fixed;
+	top: 0;
+	padding: 20px 0 0;
+	width: 100%;
+	text-align: center;
+}
+
+#navbar a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#navbar-menu {
+	margin-top: 7px;
+}
+
+#navbar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar-menu ul li {
+	display: inline-block;
+	padding: 0 10px 0;
+}
+
+
+/*** Content ***/
+
+#content-container {
+	display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 80px 0 80px;
+	overflow: scroll;
+	overflow-x: hidden;
+  /*background-color: #FDFDFD;*/
+	background-color: rgba(255,255,255,0.9);
+	/*opacity: 0.9;*/
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+#content {
+	margin: 0 auto 0;
+	max-width: 650px;
+	line-height: 1.6;
+	font-size: 18px;
+	color: #222222;
+	padding: 0 10px 20px;
+	overflow: auto;
+}
+
+a {
+	color: #702F6B;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+#content ul {
+	max-width: 500px;
+	margin: 0 auto 0;
+	font-size: 18px;
+}
+
+.style-italic {
+	font-style: italic;
+}
+
+.centered {
+	text-align: center;
+	margin: 0 auto 0;
+}
+
+
+/*** Home Page ***/
+
+h1#home {
+	/*margin-top: 30%;*/
+	/*border: 1px solid white;*/
+	position: absolute;
+	top: 50%;
+	height: 100px;
+	margin-top: -50px;
+	width: 100%;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 50px;
+	z-index: 10;
+	vertical-align: middle;
+}
+
+h1#home:hover {
+	opacity: 0;
+}
+
+.gif {
+	position: absolute;
+	top: 50%;
+	height: 350px;
+	margin-top: -257.5px;
+	/*height: 500px;*/
+	/*margin-top: -250px;*/
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.gif-flip {
+	transform: scaleX(-1);
+}
+
+.gif-lower {
+	margin-top: -117.5px;
+}
+
+.gif img {
+	z-index: -2;
+	height: 100%;
+	margin: 0 auto 0;
+	padding: 0;
+	opacity: 0.15;
+}
+
+.gif-lower img {
+	transform: rotate(180deg);
+}
+
+
+/*** About Page ***/
+
+#about-pic {
+	text-align: center;
+}
+
+#about-pic img {
+	width: 200px;
+	margin: 50px auto 10px;
+	border: 5px solid #702F6B;
+	border-radius: 50%;
+}
+
+#about-desc p span {
+	margin-right: 5px;
+}
+
+#resume {
+	width: 100px;
+	margin: 30px auto 0;
+	padding: 10px 20px 10px;
+	border-radius: 30px;
+	border: 5px solid #702F6B;
+	text-align: center;
+}
+
+#resume:hover {
+	background-color: #702F6B;
+	color: #FEFEFE;
+}
+
+
+/*** Project Page ***/
+
+.project {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #444444;
+}
+
+.project-last {
+	border-bottom: none;
+}
+
+.project img {
+	width: 100px;
+	height: auto;
+	float: left;
+}
+
+.project-label {
+	color: #444444;
+	padding-left: 50px;
+	float: left;
+	text-align:	left;
+}
+
+.project-label p {
+	text-align: left;
+}
+
+
+/** Mobile Breakpoints **/
+
+@media only screen and (max-width: 500px) {
+    p {
+      font-size: 15px;
+    }
+
+		h1#home {
+      font-size: 32px;
+    }
+
+		.gif {
+			height: 200px;
+			margin-top: -200px;
+		}
+
+		.gif-lower {
+			margin-top: -50px;
+		}
+
+		#about-pic img {
+			width: 150px;
+			margin-top: 25px;
+		}
+
+		#content ul {
+			font-size: 15px;
+		}
+
+		.project-label {
+			padding: 0 20px 0;
+		}
+
+		.project-card {
+			width: 100%;
+			text-align: center;
+		}
+
+		.project-card img {
+			float: none;
+		}
+}

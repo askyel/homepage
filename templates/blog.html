@@ -1,0 +1,27 @@
+{% extends "master.html" %}
+
+{% block content %}
+<div id="content-container">
+	<div id="content">
+
+		<div class="blog">
+			<img src="{{url_for('static', filename='replot_circle.png')}}" />
+			<h3><a href="https://macroconnections.github.io/replot/">Replot</a></h3>
+			<p>Open source suite of React Native data visualization tools.</p>
+		</div>
+
+		<div class="blog">
+			<img src="{{url_for('static', filename='teensy_circle.png')}}" />
+			<h3><a href="#">(f)light</a></h3>
+			<p>Simulated archery system with Arduino microcomputers.</p>
+		</div>
+
+		<div class="blog">
+			<img src="{{url_for('static', filename='brainpow_circle2.png')}}" />
+			<h3><a href="https://brain-power.com">Brain Power</a></h3>
+			<p>Augmented reality education system for autism.</p>
+		</div>
+
+	</div>
+</div>
+{% endblock %}

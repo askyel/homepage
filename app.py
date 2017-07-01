@@ -19,6 +19,10 @@ def resume():
 def projects():
     return render_template("projects.html")
 
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
+
 if __name__ == "__main__":
    	app.debug = True
 	app.run(host='0.0.0.0',port=8000)

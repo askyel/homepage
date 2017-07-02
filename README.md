@@ -6,4 +6,4 @@ ToDo
 - [ ] prev and next page setup on blog posts
 - [ ] archive by year button/handling on blog
 - [ ] use SASS
-- [ ] use PHP for repeat HTML elements
+- [ ] use PHP or jsx/react? for repeat HTML elements

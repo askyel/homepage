@@ -88,11 +88,10 @@ h1, h2, h3 {
   left: 0;
   right: 0;
   margin: 80px 0 80px;
+	padding: 50px 0 50px;
 	overflow: scroll;
 	overflow-x: hidden;
-  /*background-color: #FDFDFD;*/
 	background-color: rgba(255,255,255,0.9);
-	/*opacity: 0.9;*/
 }
 
 ::-webkit-scrollbar {
@@ -148,21 +147,16 @@ h1#home {
 	text-align: center;
 	text-transform: lowercase;
 	font-size: 50px;
-	z-index: 10;
+	z-index: 1;
 	vertical-align: middle;
-}
-
-h1#home:hover {
-	opacity: 0;
 }
 
 .gif {
 	position: absolute;
 	top: 50%;
 	height: 350px;
-	margin-top: -257.5px;
-	/*height: 500px;*/
-	/*margin-top: -250px;*/
+	/*margin-top: -257.5px;*/
+	margin-top: -307.5px;
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
@@ -173,7 +167,8 @@ h1#home:hover {
 }
 
 .gif-lower {
-	margin-top: -117.5px;
+	/*margin-top: -117.5px;*/
+	margin-top: -67.5px;
 }
 
 .gif img {
@@ -242,7 +237,6 @@ h1#home:hover {
 }
 
 .project-label {
-	color: #444444;
 	padding-left: 50px;
 	float: left;
 	text-align:	left;
@@ -253,12 +247,129 @@ h1#home:hover {
 }
 
 
+/** Blog Page **/
+
+.blog {
+	margin: 30px 0 0;
+	padding: 0 0 20px;
+	border-bottom: 2px solid #777777;
+}
+
+.blog h3 {
+	font-size: 30px;
+	margin: 15px 0 5px;
+}
+
+.blog h4 {
+	margin: 5px 0 0;
+	font-size: 15px;
+	color: #777777;
+}
+
+.blog p {
+}
+
+.blog img {
+	height: 100px;
+}
+
+.blog-last {
+	border-bottom: none;
+}
+
+.blog-post-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FEFEFE;
+	color: #222222;
+	overflow: scroll;
+	font-size: 21px;
+	z-index: 2;
+}
+
+.blog-post {
+	max-width: 650px;
+	margin: 50px auto 100px;
+}
+
+.blog-post a {
+	color: #444444;
+	text-decoration: underline;
+}
+
+.blog-exit {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0 20px;
+	background-color: rgba(100,100,100,0.95);
+}
+
+.blog-exit a {
+	color: #FEFEFE;
+}
+
+.blog-exit .prev {
+	padding-right: 100px;
+	/*float: left;*/
+}
+
+.blog-exit .next {
+	padding-left: 100px;
+}
+
+img.blog-cover {
+	width: 100%;
+}
+
+.date {
+	color: #888888;
+}
+
+code {
+	font-size: 12px;
+	background-color: #DDDDDD;
+	margin: 0 3px 0;
+}
+
+pre {
+	overflow: scroll;
+	background-color: #DDDDDD;
+	padding: 10px 20px 0px;
+}
+
+
 /** Mobile Breakpoints **/
 
 @media only screen and (max-width: 500px) {
     p {
       font-size: 15px;
     }
+
+		#contact-strip ul {
+			padding: 10px 0 10px;
+		}
+
+		#contact-strip ul li a img {
+			height: 15px;
+		}
+
+		#content-container {
+		  margin: 40px 0 40px;
+			padding: 25px 0 25px;
+		}
+
+		#navbar {
+			padding: 10px 0 0;
+		}
+
+		#navbar-menu {
+			margin-top: 0px;
+		}
 
 		h1#home {
       font-size: 32px;
@@ -293,5 +404,14 @@ h1#home:hover {
 
 		.project-card img {
 			float: none;
+		}
+
+		.blog-post {
+			padding: 0 15px 0;
+		}
+
+		.blog-exit {
+			padding: 10px 0 10px;
+			font-size: 15px;
 		}
 }

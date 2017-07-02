@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Ariel Skye Levy</title>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+</head>
+
+<body>
+	<div id="navbar">
+		<div id="navbar-menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="../blog.html">Blog</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="blog-post-container">
+
+    <div class="blog-post">
+
+      <img class="blog-cover" src="images/blog0-0.png" />
+
+      <h1 id="blogmycomputersetup">My Computer Setup</h1>
+
+      <p class="date">June 6, 2017</p>
+
+      <p>I just started working on a new computer this week, so I had the opportunity to review my configurations and redownload my favorite apps and tools. I listed some below, note this is geared towards Mac operating systems.</p>
+
+      <h2 id="homebrew">Homebrew</h2>
+
+      <p>This is a great package manager that makes installations and updates easy.</p>
+
+      <p>Xcode command line tools are required for Homebrew, they can be installed at the command line with:</p>
+
+      <pre><code class="shell language-shell">$ xcode-select --install</code></pre>
+
+      <p>Then we can install Homebrew and add a path to its programs:</p>
+
+      <pre><code class="shell language-shell">$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ echo 'export PATH="/usr/local/bin:$PATH"' &gt;&gt; ~/.bash_profile</code></pre>
+
+      <p>Some straightforward brew commands:</p>
+
+      <pre><code class="shell language-shell">$ brew install &lt;package&gt;
+$ brew update
+$ brew upgrade &lt;package&gt;
+$ brew cleanup</code></pre>
+
+      <h2 id="zshell">Z Shell</h2>
+
+      <p>I like zsh better than bash and I've made it my default shell. It can be installed like this:</p>
+
+      <pre><code class="shell language-shell">$ brew install zsh zsh-completions
+$ chsh -s $(which zsh)</code></pre>
+
+      <p>The Oh-My-Zsh framework has awesome plugins and themes for zsh:</p>
+
+      <pre><code class="shell language-shell">$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</code></pre>
+
+      <p>Customizations for zsh can be set in the <code>.zshrc</code> configuration  file. I use the agnoster zsh theme.</p>
+
+      <h2 id="vim">Vim</h2>
+
+      <p>The best editor for me in terminal. At first I liked it better than emacs just because constant use of the control key bothered me. But I've come to appreciate how simple, fast, and easy to customize it is.</p>
+
+      <p>The <code>.vimrc</code> file is where we can adjust default vim settings to our liking. I've used my file to turn on syntax highlighting, show line numbers, remap some of my key bindings, etc. It's available <a href="https://github.com/askyel/config/blob/master/.vimrc">here</a>.</p>
+
+      <p>I use <a href="https://github.com/tpope/vim-pathogen">pathogen</a> to manage my vim plugins in a <code>bundle</code> folder:</p>
+
+      <pre><code class="shell language-shell">$ mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;&amp; \
+$ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim</code></pre>
+
+      <p>Plugins can be installed like this:</p>
+
+      <pre><code class="shell language-shell">$ git clone &lt;link&gt; ~/.vim/bundle/&lt;name&gt;</code></pre>
+
+      <p>The ones I use are:</p>
+
+      <ul>
+      <li><a href="https://github.com/scrooloose/nerdtree">NERDTree</a>: file tree navigation system</li>
+
+      <li><a href="https://github.com/easymotion/vim-easymotion">EasyMotion</a>: quick navigation in a file</li>
+
+      <li><a href="https://github.com/scrooloose/nerdcommenter">NERDCommenter</a>: adding comments in lots of languages</li>
+
+      <li><a href="https://github.com/vim-airline/vim-airline">Airline</a>: nice, customizable status line  </li>
+
+      <li><a href="https://github.com/Valloric/YouCompleteMe">YouCompleteMe</a>: code completion</li>
+      </ul>
+
+      <h2 id="otherapps">Other Apps</h2>
+
+      <h3 id="chromewwwgooglecomchrome"><a href="https://www.google.com/chrome">Chrome</a></h3>
+
+      <p>My favorite browser, especially for web development. <strong>(free)</strong></p>
+
+      <h3 id="itermhttpswwwiterm2com"><a href="https://www.iterm2.com/">iTerm</a></h3>
+
+      <p>My preferred terminal application. I use the Monokai Soda colortheme (available <a href="git@github.com:mbadolato/iTerm2-Color-Schemes.git">here</a>) and Meslo powerline font (available <a href="https://github.com/powerline/fonts">here</a>). <strong>(free)</strong></p>
+
+      <h3 id="atomhttpsatomio"><a href="https://atom.io/">Atom</a></h3>
+
+      <p>When I'm not using vim, Atom is my text editor of choice, especially for larger projects. The git integrations are awesome. <strong>(free)</strong></p>
+
+      <h3 id="simplenotebetahttpssimplenotecomcategorybeta"><a href="https://simplenote.com/category/beta/">Simplenote (Beta)</a></h3>
+
+      <p>A streamlined note-taking app with markdown integration that syncs across devices. <strong>(free)</strong></p>
+
+      <h3 id="todoisthttpsentodoistcom"><a href="https://en.todoist.com/">Todoist</a></h3>
+
+      <p>To do list app with organization by project and due date. Keyboard shortcuts and natural language processing make the user experience very smooth. <strong>(free, premium $28.99/year)</strong></p>
+
+      <h3 id="itsycalhttpswwwmowgliicomitsycal"><a href="https://www.mowglii.com/itsycal/">Itsycal</a></h3>
+
+      <p>Neat app that places calendar date and shortcut in the toolbar. <strong>(free)</strong></p>
+
+      <h3 id="spectaclehttpswwwspectacleappcom"><a href="https://www.spectacleapp.com/">Spectacle</a></h3>
+
+      <p>Makes screen partition with window shrinking and placement quick with keyboard shortcuts. <strong>(free)</strong></p>
+
+      <h3 id="cheatsheethttpswwwmediaateliercomcheatsheet"><a href="https://www.mediaatelier.com/CheatSheet/">CheatSheet</a></h3>
+
+      <p>Holding down the command key pops up a list of keyboard shortcuts. <strong>(free)</strong> </p>
+
+      <h3 id="rockethttpmatthewpalmernetrocket"><a href="http://matthewpalmer.net/rocket/">Rocket</a></h3>
+
+      <p>Easy emoji insertion like in Slack, e.g. :roc adds the 🚀 emoji. <strong>(free)</strong></p>
+
+    </div>
+
+    <div class="blog-exit">
+      <a href="../blog.html">&#x2715</a>
+    </div>
+
+	</div>
+
+  <div id="contact-strip">
+  	<ul>
+  		<li><a href="https://www.linkedin.com/in/ariel-skye-levy"><img src="../images/linkedin.png" /></a></li>
+  		<li><a href="https://github.com/askyel"><img src="../images/git.png" /></a></li>
+  		<li><a href="mailto:aslevy@mit.edu"><img src="../images/mail.png" /></a></li>
+  	</ul>
+  </div>
+</body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Ariel Skye Levy</title>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+</head>
+
+<body>
+	<div id="navbar">
+		<div id="navbar-menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="../blog.html">Blog</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="blog-post-container">
+		<div class="blog-post">
+
+      <img class="blog-cover" src="images/blog4-0.jpg" />
+
+      <h1>(f)light</h1>
+
+      <p class="date">May 17, 2017</p>
+
+			<p>My favorite class this semester was 6.S08, Interconnected Embedded Systems. The class was a mix of electrical engineering and computer science. Over the course of the class we worked with a Teensy microcomputer to build mini electronic systems. For one of our labs, we used an accelerometer to create a basic step counter. For another one, we used a microphone and the Google Speech API to create a transcription service. </p>
+
+			<p>After a long brainstorming period, my final project team decided to create a simulated archery system with plastic bows and an LED target screen that we dubbed "(f)light". We 3D-printed a bow frame with very cool folding joints. We mounted a breadboard on one side of the bow with a Teensy and IMU sensor. String wire was run from one end of the bow to the other with a trigger button in the middle.</p>
+
+			<p>For the LED screen, we ordered a strip of 250 LED lights. We used a particleboard base and created a 15x15 matrix of square spaces with black foam to reflect the LED light inside. We soldered these lights together in a snake pattern from one corner of the board to the opposite one. Over the top we glued a piece of clear acrylic plastic.</p>
+
+			<p>When the user presses the trigger button, we capture the readings from the IMU accelerometer and gyroscope to calculate the angle at which the user is holding the bow. Based on those angles, we use projectile motion to model the theoretical trajectory towards the LED screen, assigning x and y coordinates to each matrix space for ease of calculation. </p>
+
+			<p>We designed the system as a game with five turns. Each turn had a different randomized target square on the matix that would light up in green. After a shot, the square corresponding to the user's bow angle would light up in red. The score for the shot was calculated as an inverse of the distance between these two squares. </p>
+
+			<p>Seeing this project through from a few bullet points on a whiteboard to a finished, functional product was really rewarding. Everything I had learned about wiring, a new programming language (C++), sensor signal reading, and more all came together for (f)light. Thanks to Professor Voldman for an awesome semester in 6.S08 and my teammates Caitlin, Lilia, and Sarah for a fantastic project experience. </p>
+
+		</div>
+
+		<div class="blog-exit">
+			<a href="blog3.html" class="prev">prev</a>
+      <a href="../blog.html">&#x2715</a>
+			<a href="blog5.html" class="next">next</a>
+    </div>
+	</div>
+
+<div id="contact-strip">
+	<ul>
+		<li><a href="https://www.linkedin.com/in/ariel-skye-levy"><img src="../images/linkedin.png" /></a></li>
+		<li><a href="https://github.com/askyel"><img src="../images/git.png" /></a></li>
+		<li><a href="mailto:aslevy@mit.edu"><img src="../images/mail.png" /></a></li>
+	</ul>
+</div>
+</body>

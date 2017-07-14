@@ -32,9 +32,56 @@
 
       <p class="date">May 17, 2017</p>
 
-      <p>I just started work on a new computer this week, so I had the opportunity to review my configurations and redownload my favorite apps and tools. I listed some below, note this is geared towards Mac operating systems.</p>
+			<p>I had my last UROP meeting at the MIT Media Lab Collective Learning Group this semester. Quick breakdown of that sentence:</p>
 
-      <a href="https://macroconnections.github.io/replot/">Replot</a>
+			<ul>
+			<li><a href="http://uaap.mit.edu/research-exploration/urop">UROP</a>: Stands for "Undergraduate Research Opportunities Program". It was the first college program officially designed to promote academic research opportunities for undergrads in the US. Students are paired with faculty working on a variety of cool projects throughout campus, from the Civil Engineering department to the Sloan Business School. </li>
+
+			<li><a href="https://www.media.mit.edu/">MIT Media Lab</a>: An interdisciplinary lab combining research in technology with topics like education, biomechanics, and storytelling. The building itself is almost museum-like; most of the walls are glass and there a lot of open exhibits of past projects. </li>
+
+			<li><a href="https://www.media.mit.edu/groups/collective-learning/overview/">Collective Learning Group</a>: This group at the Media Lab studies organizations and economies through data, creating interactive visualization tools to represent and process  large datasets. My favorite past project of theirs is <a href="http://pantheon.media.mit.edu/treemap/country_exports/IL/all/-4000/2010/H15/pantheon">Pantheon</a>, a breakdown of biographical records that analyzes historical cultural popularity and production. For example, the city with the most globally known computer scientists in history is New York with 6!</li>
+			</ul>
+
+			<p>When I was deciding where to do research this semester, my ideal UROP project combined design, programming, and data science. Thus the Collective Learning Group seemed like the perfect choice and luckily, they were starting a new project called Replot. </p>
+
+			<p>Replot is an open source library of data visualization tools built as custom React components. Okay, so what is React and why is this useful? </p>
+
+			<p>React is currently one of the most popular JavaScript libraries for building user interfaces on the web. It is awesome because it breaks down a web application into these customizable pieces called components. This style of building on the web has several benefits. Components can be imported into different projects, nested within each other, and reused infinitely. </p>
+
+			<p>Also, these components operate independently from each other as self-contained units. So when a user interacts with the web application and changes its state, React calculates which components are affected and only updates those specific pieces of the interface. This really boosts the efficiency of the application.</p>
+
+			<p>Currently, there aren't useful methods in React for creating graphics to represent data. <a href="https://d3js.org/">D3</a> is a widely used, very powerful JavaScript library for data visualization. But unfortunately React and D3 don't integrate well. That's because React's system of updating website elements relies on dealing with state changes inside component render methods. Meanwhile D3 modifies elements directly, making changes that React doesn't account for and will remove after its next state update. </p>
+
+			<p>So we set out to design easily importable data visualization components in React. Anyone who wants to create a display can pass the data as a prop to our components and a beautifully designed chart appears. </p>
+
+			<p>A super basic import can look like:</p>
+
+			<pre><code class="jsx language-jsx">&lt;LineChart data={this.state.data}  /&gt;</code></pre>
+
+			<p>An import with more customization can look like:</p>
+
+			<pre><code class="jsx language-jsx">&lt;LineChart data={this.state.data}
+	titleKey="location" xKey="year" yKey="population"
+	scale={this.state.scale} grid="default"
+	legend="default" legendColor={"#FFFFFF"}
+	color={this.state.color} axisColor={"#FFFFFF"}
+/&gt;</code></pre>
+
+			<p>When I first started working on Replot, I didn't know anything about React or the other tools we were using: JSX (JavaScript preprocessing that makes React a lot easier to write) and webpack (bundler that loads preprocessed files to make web deployable JavaScript). I started out creating a basic todo app in React, figuring out components and states and props. </p>
+
+			<p>The first type of display I tackled was the line chart. My first component was a line. Two pairs of x and y coordinates, a color, stroke width, opacity fed into the props; a single line comes out. I used the line component to build a line series component, that connected a series of coordinates with lines. The chart component geometrically converted inputted data points into a list of corresponding coordinates, which went into the line series component, which went into all the line components.</p>
+
+			<p>There were a few other parts of the line chart I made that were actually standardizable to other types of charts. The first was the axis component. I imported the line component and made calculations based on the data distribution and chart dimensions to set the axis labels. Axis labels were actually the trickiest part of the whole project. One challenging aspect was making number labels appealing to read, especially really large numbers. I actually used the <a href="https://github.com/HubSpot/humanize">Humanize</a> library to help; it formats a number like "123456789" into something more compact like "123.5M". Another challenging aspect was how to fit horizontal axis labels side by side. I used label lengths to determine how to angle them, maximizing horizontal orientation while including sufficient buffer space. </p>
+
+			<p>The other standardizable component was the legend. I built in a default color palette, but I also built a function to create palettes. In a three-dimensional colorspace with axes for red, green, and blue, the function creates a sloped line based on two starting color values. It then divides the space evenly along the line based on how many colors are requested from the palette. </p>
+
+			<p>I added a few other features, like the ability to convert the graph to a logarithmic scale. I also added spring motion animation, so the graph appears to grow out from the axes origin. </p>
+
+			<p>Project examples are up on the <a href="https://macroconnections.github.io/replot/">Replot website</a>, but that's currently private as it is still in development. So for now, here is a sneak peek of the line chart:</p>
+
+			<img src="images/blog3-1.png" />
+
+			<p>Working on Replot was an awesome experience and the best decision I made this semester. I'm super grateful to my mentors, Sanjay and Almaha, for being incredibly encouraging, patient, and supportive of my ideas throughout the process. There were days I would start coding after class and not stop until long after I should've started my psets, whoops. At college, where so many different activities and commitments compete for your time, I've really learned that passions prioritize themselves. And Replot proved to be one of mine! I'm planning to continue work on Replot next year, updates to follow. </p>
 
 		</div>
 

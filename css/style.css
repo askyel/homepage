@@ -103,6 +103,14 @@ h1, h2, h3 {
 	padding: 0;
 }
 
+#scroll-symbol {
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
 
 /** Bio Page **/
 

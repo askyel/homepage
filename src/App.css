@@ -1,53 +1,117 @@
 h1,h2,h3 {
-  line-height:1.2
+  line-height: 1.2;
+  font-family: 'Roboto Slab', serif;
 }
 
 .App {
-  text-align: center;
-  /* margin: 40px auto;
-  padding: 0 10px; */
-  /* max-width: 650px; */
   line-height: 1.6;
   font-size: 18px;
-  color: #444;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
 .page {
   height: 100vh;
 }
 
-.content-panel {
+.home {
+  text-align: right;
+  color: white;
+}
+
+.home-hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  width: 50%;
-  float: left;
-  padding: 0;
+  padding-right: 100px;
   margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.home-hero h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.home-hero ul {
+  list-style: none;
+}
+
+.home-hero a {
   color: white;
+  text-decoration: none;
 }
 
-.App-title {
-  font-size: 1.5em;
+.home-hero a:hover {
+  border-right: 1px solid white;
+  padding-right: 5px;
 }
 
-.App-intro {
-  font-size: large;
+.content {
+  margin: 40px auto;
+  padding: 0 50px;
+  max-width: 650px;
+  color: #444;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.section {
+  padding: 100px 0 0;
+}
+
+.section h2 {
+  border-top: 5px solid #444;
+  padding-top: 10px;
+  width: 50px;
+}
+
+.work-item {
+  padding: 20px 0;
+}
+
+.work-item-logo {
+  position: relative;
+  height: 25px;
+  float: left;
+  padding-right: 10px;
+}
+
+.work-item-header h3 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.work-item-description {
+  clear: both;
+  font-size: 14px;
+  margin-left: 35px;
+}
+
+.work-item-content {
+  clear: both;
+  padding-top: 10px;
+  padding-left: 35px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    font-size: 14px;
+  }
+
+  .home-hero {
+    padding-right: 50px;
+  }
+
+  .work-item-logo {
+    height: 20px;
+    padding-right: 5px;
+  }
+
+  .work-item-header h3 {
+    font-size: 15px;
+  }
+
+  .work-item-content {
+    padding-left: 20px;
+  }
 }

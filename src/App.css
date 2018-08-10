@@ -93,6 +93,43 @@ h1,h2,h3 {
   padding-left: 35px;
 }
 
+.footer {
+  padding: 20px 0;
+  font-size: 12px;
+  height: 20px;
+  background-color: #444;
+  color: #ddd;
+}
+
+.footer-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contact {
+  float: left;
+}
+
+.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact li {
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+
+.contact img {
+  height: 20px;
+}
+
+.copyright {
+  float: right;
+}
+
 @media (max-width: 600px) {
   .App {
     font-size: 14px;
@@ -113,5 +150,31 @@ h1,h2,h3 {
 
   .work-item-content {
     padding-left: 20px;
+  }
+
+  .footer {
+    height: 50px;
+  }
+
+  .contact {
+    float: none;
+    display: block;
+    height: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .contact ul {
+    height: 20px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .copyright {
+    float: none;
+    display: block;
+    text-align: center;
   }
 }

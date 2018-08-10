@@ -14,7 +14,7 @@ class Work extends Component {
         <WorkItem
           logo={mit}
           theme="#CC325C"
-          name="MIT"
+          name="Massacusetts Institute of Technology"
           content="Class of 2020"
         />
         <WorkItem

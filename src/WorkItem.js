@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class WorkItem extends Component {
   outlineStyle = {
-    "-webkit-text-stroke-width": "1px",
+    "-webkit-text-stroke-width": "0.5px",
     "-webkit-text-stroke-color": "black"
   };
 

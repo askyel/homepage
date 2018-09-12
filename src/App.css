@@ -3,6 +3,11 @@ h1,h2,h3 {
   font-family: 'Roboto Slab', serif;
 }
 
+a {
+  color: inherit;
+  font-weight: 700;
+}
+
 .App {
   line-height: 1.6;
   font-size: 18px;
@@ -65,7 +70,7 @@ h1,h2,h3 {
 }
 
 .work-item {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .work-item-logo {
@@ -79,6 +84,13 @@ h1,h2,h3 {
   float: left;
   margin: 0;
   padding: 0;
+}
+
+.work-item-subheader {
+    clear: both;
+    padding-top: 10px;
+    padding-left: 35px;
+    font-style: italic;
 }
 
 .work-item-description {
@@ -154,6 +166,7 @@ h1,h2,h3 {
 
   .footer {
     height: 50px;
+    margin-top: 20px;
   }
 
   .contact {

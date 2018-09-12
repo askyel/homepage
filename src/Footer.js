@@ -12,11 +12,10 @@ class Footer extends Component {
         <div className="footer-content">
           <div className="contact">
             <ul>
-              <li><img src={email} /></li>
-              <li><img src={linkedin} /></li>
-              <li><img src={github} /></li>
-              <li><img src={medium} /></li>
-              <li><img src={photo} /></li>
+              <li><a href="mailto:aslevy@mit.edu"><img src={email} /></a></li>
+              <li><a href="https://www.linkedin.com/in/ariel-skye-levy/"><img src={linkedin} /></a></li>
+              <li><a href="https://github.com/askyel"><img src={github} /></a></li>
+              <li><a href="https://photos.app.goo.gl/xfx6RbwrRPdjUrU56"><img src={photo} /></a></li>
             </ul>
           </div>
           <div className="copyright">&copy; 2018 Ariel Skye Levy</div>

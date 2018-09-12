@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class WorkItem extends Component {
   outlineStyle = {
-    "-webkit-text-stroke-width": "0.5px",
+    "-webkit-text-stroke-width": "0.1px",
     "-webkit-text-stroke-color": "black"
   };
 
@@ -15,7 +15,10 @@ class WorkItem extends Component {
       <div className="work-item">
         <div className="work-item-header">
           <img className="work-item-logo" src={this.props.logo} />
-          <h3 style={this.style}>{this.props.name}</h3>
+          <a href={this.props.link}><h3 style={this.style}>{this.props.name}</h3></a>
+        </div>
+        <div className="work-item-subheader">
+          {this.props.subheader}
         </div>
         <div className="work-item-content">
           {this.props.content}

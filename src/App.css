@@ -191,3 +191,128 @@ a {
     text-align: center;
   }
 }
+
+/* ----- Mobile Styles ----- */
+
+@media only screen and (max-width : 400px) {
+  
+.home-hero {
+  padding-right: 50px;
+}
+
+.home-hero h1 {
+  font-size: 60px;
+}
+
+.home-hero ul {
+  font-size: 20px;
+}
+
+.content {
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.section {
+  padding: 50px 0 0;
+}
+
+.work-item {
+  padding: 30px 0;
+}
+
+.work-item-header h3 {
+  clear: both;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.work-item-subheader {
+    clear: both;
+    padding-top: 5px;
+    padding-left: 0px;
+}
+
+.work-item-description {
+  clear: both;
+  font-size: 14px;
+  margin-left: 0px;
+}
+
+.work-item-content {
+  clear: both;
+  padding-top: 5px;
+  padding-left: 0px;
+  font-size: 16px;
+}
+
+.footer {
+  padding: 20px 0;
+  font-size: 12px;
+  height: 20px;
+  background-color: #444;
+  color: #ddd;
+}
+
+.footer-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contact {
+  float: left;
+}
+
+.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact li {
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+
+.contact img {
+  height: 20px;
+}
+
+.copyright {
+  float: right;
+}
+
+@media (max-width: 600px) {
+  .App {
+    font-size: 14px;
+  }
+
+  .home-hero {
+    padding-right: 50px;
+  }
+
+  .work-item-logo {
+    height: 20px;
+    padding-right: 5px;
+  }
+
+  .work-item-header h3 {
+    font-size: 15px;
+  }
+
+  .work-item-content {
+    padding-left: 20px;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact ul {
+    width: 120px;
+  }
+}
+
+}

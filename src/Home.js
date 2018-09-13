@@ -8,7 +8,7 @@ class Home extends Component {
   backgrounds = [hayes, feathers, globe]
   image = this.backgrounds[Math.floor(Math.random()*this.backgrounds.length)];
   backgroundStyle = {
-    background: `linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9) ), url('./${this.image}')`,
+    background: `linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url('./${this.image}')`,
     backgroundSize: "cover",
     overflow: "hidden"
   };

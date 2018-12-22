@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,400italic,700);
-
 html {
-	background-color: #FDFDFD;
+	background-color: #430527;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -10,142 +8,99 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.4;
-	color: #222222;
+	color: #BBB;
 }
 
 h1, h2, h3 {
 	line-height: 1.2;
+	/* font-family: 'Roboto Slab', serif; */
+	color: #EEE;
 }
 
-
-/*** Navigation Bar ***/
-
-#navbar {
-	position: fixed;
-	top: 0;
-	padding: 20px 0 0;
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
-	text-transform: uppercase;
-}
-
-#navbar a {
-	color: inherit;
+a {
+	font-weight: 700;
 	text-decoration: none;
+	color: #EEE;
 }
 
-#navbar-menu {
-	margin-top: 7px;
+a:hover {
+	opacity: 0.8;
 }
 
-#navbar-menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#navbar-menu ul li {
-	display: inline-block;
-	padding: 0 10px 0;
-}
-
-
-/*** Content ***/
-
-#content {
-	margin: 0 auto 0;
-	max-width: 900px;
-	line-height: 1.6;
-	font-size: 18px;
-	color: #222222;
-	padding: 100px 0 100px;
-	overflow: auto;
-}
-
-#content a {
-	color: inherit;
-}
-
-#content a:hover {
-	opacity: 0.7;
-}
-
-
-/*** Home Page ***/
-
-#landing {
-	background: linear-gradient(to bottom right, #C33764, #1D2671);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 100vh;
-	color: #FDFDFD;
-}
-
-#home {
-	border: 10px solid white;
-	padding: 50px 100px 50px;
-	position: absolute;
-	left: calc(50% - 212px);
-	top: calc(50% - 240px);
+#header {
 	text-align: center;
-	text-transform: lowercase;
-	z-index: 1;
-	vertical-align: middle;
-}
-
-#home h1 {
-	font-size: 100px;
-	margin: 0;
-	padding: 0;
-}
-
-#scroll-symbol {
-    font-size: 100px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-}
-
-
-/** Bio Page **/
-
-#bio p {
-	column-count: 2;
-	column-gap: 30px;
-}
-
-#bio #resume {
-	font-size: 18px;
-	text-align: center;
-	margin-top: 40px;
-}
-
-#bio #resume a {
-	border: 2px solid #222222;
-	padding: 10px 30px;
-	text-decoration: none;
-}
-
-#bio #resume a:hover {
-	opacity: 1;
-	background-color: #222222;
+	padding: 20px 0 20px;
 	color: white;
 }
 
-#contact-strip {
+#content {
+  max-width: 800px;
+	margin: 0 auto 0;
+}
+
+.section {
+  padding: 20px 50px 20px;
+}
+
+#headshot {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+#logos {
+	background-color: rgba(255,255,255, 0.1);
+	padding: 20px 0;
+}
+
+#logos ul {
+	list-style-type: none;
+}
+
+#logos ul li {
+	display: inline-block;
+	padding: 15px 12px;
+}
+
+#logos ul li img {
+	height: 30px;
+	vertical-align: middle;
+	filter: brightness(0) invert(100%);
+}
+
+#resume {
+	border: 1px solid #888;
+	width: 100px;
+	margin: 0 auto;
 	text-align: center;
-	margin-top: 30px;
+	padding: 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#footer {
+	font-size: 15px;
+	margin: 20px 50px 0;
+	padding: 20px 0px;
+	color: #BBB;
+	border-top: 1px solid #888;
+}
+
+#copyright {
+	float: left;
+	padding-bottom: 20px;
+}
+
+#contact-strip {
+	float: right;
+	padding-bottom: 20px;
 }
 
 #contact-strip ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px 0;
+	padding: 0;
 }
 
 #contact-strip ul li {
@@ -154,61 +109,9 @@ h1, h2, h3 {
 }
 
 #contact-strip ul li a img {
-	height: 25px;
-	filter: invert(20%);
-}
-
-#index #contact-strip ul li a img {
+	height: 15px;
 	filter: invert(100%);
 }
-
-
-/** Work Page **/
-
-.project {
-	width: 100%;
-	border: 5px solid #222222;
-	padding: 20px;
-	box-sizing: border-box;
-	margin: 50px 0;
-}
-
-.project::after {
-	content: " ";
-	display: block;
-	height: 0;
-	clear: both;
-}
-
-.project img {
-	width: calc(50% - 20px);
-	float: left;
-}
-
-.project h3, .project p, .project h4 {
-	width: 50%;
-	margin: 0 0 5px;
-	padding: 0 10px 0;
-	float: right;
-}
-
-.project h4 {
-	font-size: 15px;
-	font-weight: normal;
-	font-style: italic;
-}
-
-
-/** Footer **/
-
-#footer {
-	width: 100%;
-	text-align: center;
-	background-color: #222222;
-	padding: 20px 0;
-	color: white;
-}
-
 
 /** Mobile Breakpoints **/
 
@@ -217,44 +120,11 @@ h1, h2, h3 {
       font-size: 15px;
     }
 
-		#navbar {
-			padding: 10px 0 0;
-			font-size: 18px;
-		}
-
-		#navbar-menu {
-			margin-top: 0px;
-		}
-
-		#navbar-menu ul li {
-			padding: 0 5px 0;
-		}
-
-		#home {
-			padding: 30px 60px 30px;
-			left: calc(50% - 141.4px);
-			top: calc(50% - 166px);
-		}
-
-		#home h1 {
-      font-size: 70px;
-    }
-
 		#content {
 			padding: 50px;
 		}
 
-		#bio p {
-			column-count: 1;
-		}
-
-		.project h3, .project h4, .project p {
-			width: calc(100% - 20px);
-			padding: 0 10px 0;
-		}
-
-		.project img {
-			width: 100%;
-			margin: 0 0 10px;
+		h1 {
+			font-size: 25px;
 		}
 }

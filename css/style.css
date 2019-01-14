@@ -39,7 +39,7 @@ a:hover {
 #header img {
 	/* float: left; */
 	filter: brightness(0) invert(100%);
-	height: 50px;
+	height: 30px;
 }
 
 #content {
@@ -51,31 +51,36 @@ a:hover {
   padding: 20px 50px 20px;
 }
 
+.photos {
+	padding: 15px 0;
+	/* background-color: rgba(255,255,255, 0.1); */
+	overflow: hidden;
+}
+
 .triptych {
 	width: 30%;
 	padding: 0 1.6%;
 	float: left;
 }
 
-#headshot {
-	width: 38%;
+.spread {
+	width: 20%;
+	/* padding: 0 0.5%; */
 	float: left;
-	/* margin: 0 10% 0; */
-	/* border: 10vw solid rgba(255,255,255, 0.1); */
+}
+
+#headshot {
+	width: 39.5%;
+	float: left;
 }
 
 #landscape {
-	width: 58%;
+	width: 59.5%;
 	float: right;
-}
-
-h1 {
-	padding-top: 20px;
 }
 
 #logos {
 	background-color: rgba(255,255,255, 0.1);
-	/* padding: 20px 0; */
 }
 
 #logos ul {
